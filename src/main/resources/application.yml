@@ -3,12 +3,12 @@ server:
   shutdown: graceful
 spring:
   datasource:
-    url:
-    username:
-    password:
+    url: jdbc:postgresql://localhost:5432/transferz
+    username: postgres
+    password: postgres
     driver-class-name:
   jpa:
-    show-sql:
+    show-sql: true
   jackson:
     serialization:
       write-dates-as-timestamps: false
