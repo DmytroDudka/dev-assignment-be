@@ -13,8 +13,18 @@ spring:
     serialization:
       write-dates-as-timestamps: false
     date-format: yyyy-MM-dd HH:mm:ss
+  liquibase:
+    change-log: /db/changelog/changelog-master.xml
+
+logging:
+  level:
+    liquibase: INFO
+
 management:
   endpoints:
     web:
       exposure:
         include: 'info,health,metrics'
+
+value:
+  amountOfPassengerPerFlight: 150

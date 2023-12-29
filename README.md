@@ -56,7 +56,7 @@ We would like to see these endpoints:
 Additional functionality needed: 
 * On each "Add new passenger" REST request, the service should calculate the amount of passengers per flight:
   * If the amount of passengers is 150 (amount externally configurable) or higher, the flight should depart and new passengers should be booked on the next flight
-  * The destination of the flight should be auto-selected based on the available airports
+  * The destination of the flight should be auto-selected based on the available airports (<u>This logic should be implemented during adding a flight. We do not have such functionality/requirements for now)</u>)
 
 ## Notes
 * Please implement all part of the service with performance in mind
